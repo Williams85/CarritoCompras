@@ -2,3 +2,4 @@ D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompra
 D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Entidad\bin\Debug\CarritoCompras.Entidad.pdb
 D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Entidad\obj\Debug\CarritoCompras.Entidad.dll
 D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Entidad\obj\Debug\CarritoCompras.Entidad.pdb
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Entidad\obj\Debug\CarritoCompras.Entidad.csprojResolveAssemblyReference.cache

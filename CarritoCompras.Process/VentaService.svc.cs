@@ -77,10 +77,15 @@ namespace CarritoCompras.Process
                 if (response.Estado)
                 {
                     oResponseWeb.Message = "Se grabó la venta";
+                    oResponseWeb.Estado = true;
                 }
                 else
                 {
-                    oResponseWeb.Message = "No se grabó la venta";
+                    oResponseWeb.Estado = false;
+                    if (string.IsNullOrWhiteSpace(response.Message))
+                        oResponseWeb.Message = "No se grabó la venta";
+                    else
+                        oResponseWeb.Message = response.Message;
                 }
             }
             return oResponseWeb;

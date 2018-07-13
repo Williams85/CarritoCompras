@@ -9,6 +9,5 @@ D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompra
 D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.EntityService\bin\CarritoCompras.Entidad.pdb
 D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.EntityService\bin\CarritoCompras.Utilitario.pdb
 D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.EntityService\bin\CarritoCompras.Repositorio.pdb
-D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.EntityService\obj\Debug\CarritoCompras.EntityService.csprojResolveAssemblyReference.cache
 D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.EntityService\obj\Debug\CarritoCompras.EntityService.dll
 D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.EntityService\obj\Debug\CarritoCompras.EntityService.pdb

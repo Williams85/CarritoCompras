@@ -31,10 +31,10 @@
                             @entidad.Producto.Cantidad
                         </td>
                         <td class="center">
-                            @entidad.Producto.Precio
+                            @entidad.Producto.Precio.ToString("###.#0")
                         </td>
                         <td class="center">
-                            @(entidad.Producto.Precio * entidad.Producto.Cantidad)
+                            @entidad.SubTotal.ToString("###.#0")
                         </td>
 
                     </tr>

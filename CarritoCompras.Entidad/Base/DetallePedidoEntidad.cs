@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarritoCompras.Entidad
 {
-    public class DetallePedidoEntidad
+    public partial class DetallePedidoEntidad
     {
         public int Cod_DetallePedido { get; set; }
         public int Cod_Pedido { get; set; }

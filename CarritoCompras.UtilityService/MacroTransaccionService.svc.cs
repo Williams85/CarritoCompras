@@ -80,16 +80,34 @@ namespace CarritoCompras.UtilityService
         {
 
             PedidoDominio oPedidoDominio = new PedidoDominio();
+            ProductoDominio oProductoDominio = new ProductoDominio();
             ResponseWeb response = new ResponseWeb();
-            response.Estado = oPedidoDominio.RegistrarPedido(entidad);
+            response.Estado = true;
+            foreach (var item in entidad.DetallePedido)
+            {
+                var producto = oProductoDominio.ObtenerxCodigo(item.Producto.Cod_Producto.ToString());
+                if (producto.Cantidad < item.Producto.Cantidad)
+                {
+                    response.Estado = false;
+                    response.Message = "No hay stock en alguno de los productos";
+                    break;
+                }
+            }
+
+
             if (response.Estado)
             {
-                string rutaCola = @".\private$\compraproductos";
-                if (!MessageQueue.Exists(rutaCola))
-                    MessageQueue.Create(rutaCola);
-                MessageQueue cola = new MessageQueue(rutaCola);
-                cola.Purge();
+                response.Estado = oPedidoDominio.RegistrarPedido(entidad);
+                if (response.Estado)
+                {
+                    string rutaCola = @".\private$\compraproductos";
+                    if (!MessageQueue.Exists(rutaCola))
+                        MessageQueue.Create(rutaCola);
+                    MessageQueue cola = new MessageQueue(rutaCola);
+                    cola.Purge();
+                }
             }
+
             return response;
         }
 

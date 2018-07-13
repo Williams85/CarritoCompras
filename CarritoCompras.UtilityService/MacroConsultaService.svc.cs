@@ -74,12 +74,14 @@ namespace CarritoCompras.UtilityService
             }
 
             List<DetallePedidoEntidad> ListaDetallePedido = new List<DetallePedidoEntidad>();
-            foreach(var item in ListaProductos){
+            foreach (var item in ListaProductos)
+            {
                 var producto = oProductoDominio.ObtenerxCodigo(item.Cod_Producto.ToString());
                 DetallePedidoEntidad oDetallePedidoEntidad = new DetallePedidoEntidad();
                 producto.Cantidad = item.Cantidad;
                 oDetallePedidoEntidad.Producto = producto;
-                oDetallePedidoEntidad.SubTotal = (producto.Cantidad*producto.Precio);
+                oDetallePedidoEntidad.Cantidad = producto.Cantidad;
+                oDetallePedidoEntidad.SubTotal = (item.Cantidad * producto.Precio);
                 ListaDetallePedido.Add(oDetallePedidoEntidad);
             }
 

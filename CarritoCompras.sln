@@ -32,6 +32,7 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarritoCompras.Testing", "CarritoCompras.Testing\CarritoCompras.Testing.csproj", "{F6A33F6B-14FD-49DC-B7FB-6DC15B2CA774}"
 	ProjectSection(ProjectDependencies) = postProject
 		{186C9CB4-7D3F-4AD8-B3D8-8A5620A0EC8E} = {186C9CB4-7D3F-4AD8-B3D8-8A5620A0EC8E}
+		{6313A6BA-4BC2-49EC-A174-6761278D76B7} = {6313A6BA-4BC2-49EC-A174-6761278D76B7}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarritoCompras.TaskService", "CarritoCompras.TaskService\CarritoCompras.TaskService.csproj", "{B2C745D1-A784-4B30-ACE5-0A41BE3DC8C5}"

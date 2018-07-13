@@ -324,6 +324,67 @@ namespace CarritoCompras.Testing.ProductoServiceReference {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ResponseWeb", Namespace="http://schemas.datacontract.org/2004/07/CarritoCompras.Utilitario")]
+    [System.SerializableAttribute()]
+    public partial class ResponseWeb : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bool EstadoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MessageField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool Estado {
+            get {
+                return this.EstadoField;
+            }
+            set {
+                if ((this.EstadoField.Equals(value) != true)) {
+                    this.EstadoField = value;
+                    this.RaisePropertyChanged("Estado");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Message {
+            get {
+                return this.MessageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MessageField, value) != true)) {
+                    this.MessageField = value;
+                    this.RaisePropertyChanged("Message");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ProductoServiceReference.IProductoService")]
     public interface IProductoService {
@@ -333,6 +394,12 @@ namespace CarritoCompras.Testing.ProductoServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IProductoService/BuscarProducto", ReplyAction="http://tempuri.org/IProductoService/BuscarProductoResponse")]
         System.Threading.Tasks.Task<System.Collections.Generic.List<CarritoCompras.Testing.ProductoServiceReference.ProductoEntidad>> BuscarProductoAsync(CarritoCompras.Testing.ProductoServiceReference.ProductoEntidad entidad);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IProductoService/ReservarProducto", ReplyAction="http://tempuri.org/IProductoService/ReservarProductoResponse")]
+        CarritoCompras.Testing.ProductoServiceReference.ResponseWeb ReservarProducto(CarritoCompras.Testing.ProductoServiceReference.ProductoEntidad entidad);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IProductoService/ReservarProducto", ReplyAction="http://tempuri.org/IProductoService/ReservarProductoResponse")]
+        System.Threading.Tasks.Task<CarritoCompras.Testing.ProductoServiceReference.ResponseWeb> ReservarProductoAsync(CarritoCompras.Testing.ProductoServiceReference.ProductoEntidad entidad);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -368,6 +435,14 @@ namespace CarritoCompras.Testing.ProductoServiceReference {
         
         public System.Threading.Tasks.Task<System.Collections.Generic.List<CarritoCompras.Testing.ProductoServiceReference.ProductoEntidad>> BuscarProductoAsync(CarritoCompras.Testing.ProductoServiceReference.ProductoEntidad entidad) {
             return base.Channel.BuscarProductoAsync(entidad);
+        }
+        
+        public CarritoCompras.Testing.ProductoServiceReference.ResponseWeb ReservarProducto(CarritoCompras.Testing.ProductoServiceReference.ProductoEntidad entidad) {
+            return base.Channel.ReservarProducto(entidad);
+        }
+        
+        public System.Threading.Tasks.Task<CarritoCompras.Testing.ProductoServiceReference.ResponseWeb> ReservarProductoAsync(CarritoCompras.Testing.ProductoServiceReference.ProductoEntidad entidad) {
+            return base.Channel.ReservarProductoAsync(entidad);
         }
     }
 }
