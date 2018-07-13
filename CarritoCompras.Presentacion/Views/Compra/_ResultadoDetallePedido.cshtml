@@ -1,0 +1,50 @@
+﻿@model List<CarritoCompras.Agente.VS.DetallePedidoEntidad>
+@{
+    ViewBag.Title = "_ResultadoDetallePedido";
+}
+
+@if (Model != null && Model.Count > 0)
+{
+    
+    <h4><strong>Datos de Compra</strong></h4>
+            <table class="tabla">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th class="center">Categoria</th>
+                    <th class="center">Cantidad</th>
+                    <th>Precio Unitario</th>
+                    <th>SubTotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var entidad in Model)
+                {
+                    <tr>
+                        <td class="center">
+                            @entidad.Producto.Nom_Producto
+                        </td>
+                        <td class="center">
+                            @entidad.Producto.Categoria.Nom_Categoria
+                        </td>
+                        <td class="center">
+                            @entidad.Producto.Cantidad
+                        </td>
+                        <td class="center">
+                            @entidad.Producto.Precio
+                        </td>
+                        <td class="center">
+                            @(entidad.Producto.Precio * entidad.Producto.Cantidad)
+                        </td>
+
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+    
+    <br />
+    <br />
+}
+

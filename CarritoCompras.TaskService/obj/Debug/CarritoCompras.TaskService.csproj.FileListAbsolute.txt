@@ -1,0 +1,14 @@
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.TaskService\bin\CarritoCompras.TaskService.dll.config
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.TaskService\bin\CarritoCompras.TaskService.dll
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.TaskService\bin\CarritoCompras.TaskService.pdb
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.TaskService\bin\CarritoCompras.Dominio.dll
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.TaskService\bin\CarritoCompras.Entidad.dll
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.TaskService\bin\CarritoCompras.Utilitario.dll
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.TaskService\bin\CarritoCompras.Repositorio.dll
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.TaskService\bin\CarritoCompras.Dominio.pdb
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.TaskService\bin\CarritoCompras.Entidad.pdb
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.TaskService\bin\CarritoCompras.Utilitario.pdb
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.TaskService\bin\CarritoCompras.Repositorio.pdb
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.TaskService\obj\Debug\CarritoCompras.TaskService.csprojResolveAssemblyReference.cache
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.TaskService\obj\Debug\CarritoCompras.TaskService.dll
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.TaskService\obj\Debug\CarritoCompras.TaskService.pdb

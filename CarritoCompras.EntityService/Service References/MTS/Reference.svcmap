@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cf5cf52e-2a15-420f-b138-94c52d49c9a7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:3327/MacroTransaccionService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MacroTransaccionService.wsdl" MetadataType="Wsdl" ID="14266abd-898c-4901-b9fb-455b5974f219" SourceId="1" SourceUrl="http://localhost:3327/MacroTransaccionService.svc?wsdl" />
+    <MetadataFile FileName="MacroTransaccionService.xsd" MetadataType="Schema" ID="9a03b5c2-4ea1-40ca-b674-12bc46eacb46" SourceId="1" SourceUrl="http://localhost:3327/MacroTransaccionService.svc?xsd=xsd0" />
+    <MetadataFile FileName="MacroTransaccionService1.xsd" MetadataType="Schema" ID="0e3d274e-b996-4be8-af06-5999eda4440d" SourceId="1" SourceUrl="http://localhost:3327/MacroTransaccionService.svc?xsd=xsd1" />
+    <MetadataFile FileName="MacroTransaccionService2.xsd" MetadataType="Schema" ID="f7fca26c-0528-49b9-bb68-695ecf3a4b0b" SourceId="1" SourceUrl="http://localhost:3327/MacroTransaccionService.svc?xsd=xsd2" />
+    <MetadataFile FileName="MacroTransaccionService3.xsd" MetadataType="Schema" ID="82e9f928-ecbf-4d3f-86a7-d11953bf7087" SourceId="1" SourceUrl="http://localhost:3327/MacroTransaccionService.svc?xsd=xsd3" />
+    <MetadataFile FileName="MacroTransaccionService.disco" MetadataType="Disco" ID="c678686d-8b51-4e95-9d69-f7e60820891d" SourceId="1" SourceUrl="http://localhost:3327/MacroTransaccionService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

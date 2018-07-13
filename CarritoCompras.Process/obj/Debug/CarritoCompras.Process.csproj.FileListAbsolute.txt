@@ -1,0 +1,5 @@
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Process\bin\CarritoCompras.Process.dll.config
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Process\bin\CarritoCompras.Process.dll
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Process\bin\CarritoCompras.Process.pdb
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Process\obj\Debug\CarritoCompras.Process.dll
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Process\obj\Debug\CarritoCompras.Process.pdb

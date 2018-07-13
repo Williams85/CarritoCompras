@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Confirmar Compra</h2>
+<div id="ResultadoDetalleCompra">
+
+</div>
+<h4><strong>Datos del Cliente</strong></h4>
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">Cliente:</label>
+            <input type="text" class="form-control" id="Nom_Cliente" placeholder="Cliente">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputPassword4">Email:</label>
+            <input type="text" class="form-control" id="Ema_Cliente" placeholder="Email">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">Direccion Entrega:</label>
+            <input type="text" class="form-control" id="Dir_Entrega" placeholder="Direccion Entrega">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputPassword4">Fecha Entrega</label>
+            <input type="text" class="form-control" id="Fecha_Entrega" placeholder="Fecha Entrega">
+        </div>
+    </div>
+
+    <div id="ResultadoMediosPago">
+
+    </div>
+    <button type="button" class="btn btn-warning btn-lg" id="IdPagar" style="float:right;">Pagar</button>
+</form>
+
+@Scripts.Render("~/bundles/script-layaout")
+@Scripts.Render("~/bundles/compra")

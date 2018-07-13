@@ -1,0 +1,28 @@
+﻿@model List<CarritoCompras.Agente.VS.ProductoEntidad>
+@{
+    ViewBag.Title = "Categoria";
+}
+
+@if (Model != null && Model.Count > 0)
+{
+    foreach (var entidad in Model)
+    {
+        <article>
+
+            <img src="@Url.Content(entidad.Foto)" width="100%" />
+            <span>@entidad.Nom_Producto</span>
+            <div class="precio">S/. @entidad.Precio.ToString("##.#0")</div>
+            <div class="stock">Stock: @entidad.Cantidad</div>
+            <div class="acciones">
+                <button type="button" class="btn btn-sm btn-danger btn-agregar" data-id="@entidad.Cod_Producto">Agregar</button>
+                <input type="text" placeholder="Cantidad" class="right" />
+            </div>
+        </article>
+    }
+    <div class="clearfix"></div>
+    <br /><br />
+    <a href="/Compra/Index" class="btn btn-danger btn-lg active right" style="float:right;" id="btn-comprar" role="button">Comprar</a>
+}
+
+@Scripts.Render("~/bundles/script-layaout")
+@Scripts.Render("~/bundles/home")

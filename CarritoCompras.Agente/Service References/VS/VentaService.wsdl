@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="VentaService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51149/VentaService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51149/VentaService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:51149/VentaService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CarritoCompras.Entidad" />
+      <xsd:import schemaLocation="http://localhost:51149/VentaService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CarritoCompras.Utilitario" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IVentaService_ListarCategoria_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarCategoria" />
+  </wsdl:message>
+  <wsdl:message name="IVentaService_ListarCategoria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarCategoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVentaService_BuscarProducto_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarProducto" />
+  </wsdl:message>
+  <wsdl:message name="IVentaService_BuscarProducto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarProductoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVentaService_ReservarProducto_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReservarProducto" />
+  </wsdl:message>
+  <wsdl:message name="IVentaService_ReservarProducto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReservarProductoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVentaService_BuscarDetallePedido_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarDetallePedido" />
+  </wsdl:message>
+  <wsdl:message name="IVentaService_BuscarDetallePedido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarDetallePedidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVentaService_ListarMediosPago_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarMediosPago" />
+  </wsdl:message>
+  <wsdl:message name="IVentaService_ListarMediosPago_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarMediosPagoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVentaService_GrabarVenta_InputMessage">
+    <wsdl:part name="parameters" element="tns:GrabarVenta" />
+  </wsdl:message>
+  <wsdl:message name="IVentaService_GrabarVenta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GrabarVentaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IVentaService">
+    <wsdl:operation name="ListarCategoria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVentaService/ListarCategoria" message="tns:IVentaService_ListarCategoria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVentaService/ListarCategoriaResponse" message="tns:IVentaService_ListarCategoria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarProducto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVentaService/BuscarProducto" message="tns:IVentaService_BuscarProducto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVentaService/BuscarProductoResponse" message="tns:IVentaService_BuscarProducto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReservarProducto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVentaService/ReservarProducto" message="tns:IVentaService_ReservarProducto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVentaService/ReservarProductoResponse" message="tns:IVentaService_ReservarProducto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarDetallePedido">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVentaService/BuscarDetallePedido" message="tns:IVentaService_BuscarDetallePedido_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVentaService/BuscarDetallePedidoResponse" message="tns:IVentaService_BuscarDetallePedido_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarMediosPago">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVentaService/ListarMediosPago" message="tns:IVentaService_ListarMediosPago_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVentaService/ListarMediosPagoResponse" message="tns:IVentaService_ListarMediosPago_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GrabarVenta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVentaService/GrabarVenta" message="tns:IVentaService_GrabarVenta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVentaService/GrabarVentaResponse" message="tns:IVentaService_GrabarVenta_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IVentaService" type="tns:IVentaService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListarCategoria">
+      <soap:operation soapAction="http://tempuri.org/IVentaService/ListarCategoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarProducto">
+      <soap:operation soapAction="http://tempuri.org/IVentaService/BuscarProducto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReservarProducto">
+      <soap:operation soapAction="http://tempuri.org/IVentaService/ReservarProducto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarDetallePedido">
+      <soap:operation soapAction="http://tempuri.org/IVentaService/BuscarDetallePedido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarMediosPago">
+      <soap:operation soapAction="http://tempuri.org/IVentaService/ListarMediosPago" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GrabarVenta">
+      <soap:operation soapAction="http://tempuri.org/IVentaService/GrabarVenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VentaService">
+    <wsdl:port name="BasicHttpBinding_IVentaService" binding="tns:BasicHttpBinding_IVentaService">
+      <soap:address location="http://localhost:51149/VentaService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

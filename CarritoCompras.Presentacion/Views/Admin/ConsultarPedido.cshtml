@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "ConsultarPedido";
+}
+
+<h2>Consultar Pedidos</h2>
+
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">Fecha Inicio Pedido:</label>
+            <input type="date" class="form-control" id="Fecha_Inicio" placeholder="Fecha Inicio">
+            <input type="hidden" id="FechaInicio" />
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputPassword4">Fecha Fin Pedido:</label>
+            <input type="date" class="form-control" id="Fecha_Fin" placeholder="Fecha Fin">
+            <input type="hidden" id="FechaFin" />
+        </div>
+    </div>
+    <button type="button" class="btn btn-warning btn-lg" id="IdBuscarPedidos" style="float:right;">Buscar</button>
+    <div class="clearfix"></div>
+</form>
+<div id="ResultadoPedidos">
+
+</div>
+@Scripts.Render("~/bundles/script-layaout")
+@Scripts.Render("~/bundles/admin")
+

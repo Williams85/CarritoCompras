@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d7919f07-55ff-4266-9d5e-b5708543e407" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:3316/DetallePedidoService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DetallePedidoService.xsd" MetadataType="Schema" ID="a7dcf575-af8e-4ece-a842-149ad08d96b7" SourceId="1" SourceUrl="http://localhost:3316/DetallePedidoService.svc?xsd=xsd0" />
+    <MetadataFile FileName="DetallePedidoService1.xsd" MetadataType="Schema" ID="04e5821b-24c8-42d8-ad1a-d883e60b7a97" SourceId="1" SourceUrl="http://localhost:3316/DetallePedidoService.svc?xsd=xsd2" />
+    <MetadataFile FileName="DetallePedidoService2.xsd" MetadataType="Schema" ID="38839ebf-1a4b-4897-b64f-54be3c4467bd" SourceId="1" SourceUrl="http://localhost:3316/DetallePedidoService.svc?xsd=xsd1" />
+    <MetadataFile FileName="DetallePedidoService.disco" MetadataType="Disco" ID="1bc06ae2-4256-42a3-828b-68527a64f2a1" SourceId="1" SourceUrl="http://localhost:3316/DetallePedidoService.svc?disco" />
+    <MetadataFile FileName="DetallePedidoService.wsdl" MetadataType="Wsdl" ID="0d595cb1-37d4-4ec1-9753-bf4c8fa6c2d2" SourceId="1" SourceUrl="http://localhost:3316/DetallePedidoService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

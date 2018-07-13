@@ -1,0 +1,5 @@
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Testing\bin\Debug\CarritoCompras.Testing.dll.config
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Testing\bin\Debug\CarritoCompras.Testing.dll
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Testing\bin\Debug\CarritoCompras.Testing.pdb
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Testing\obj\Debug\CarritoCompras.Testing.dll
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Testing\obj\Debug\CarritoCompras.Testing.pdb

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:3316/PedidoService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CarritoCompras.Entidad" />
+  <xs:import schemaLocation="http://localhost:3316/PedidoService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CarritoCompras.Utilitario" />
+  <xs:element name="GuardarPedido">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CarritoCompras.Entidad" minOccurs="0" name="entidad" nillable="true" type="q1:PedidoEntidad" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarPedidoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CarritoCompras.Utilitario" minOccurs="0" name="GuardarPedidoResult" nillable="true" type="q2:ResponseWeb" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarPedido">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CarritoCompras.Entidad" minOccurs="0" name="entidad" nillable="true" type="q3:PedidoEntidad" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarPedidoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/CarritoCompras.Entidad" minOccurs="0" name="ConsultarPedidoResult" nillable="true" type="q4:ArrayOfPedidoEntidad" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarPedido">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/CarritoCompras.Entidad" minOccurs="0" name="entidad" nillable="true" type="q5:PedidoEntidad" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarPedidoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/CarritoCompras.Utilitario" minOccurs="0" name="ModificarPedidoResult" nillable="true" type="q6:ResponseWeb" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

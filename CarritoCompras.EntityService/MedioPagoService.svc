@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="CarritoCompras.EntityService.MedioPagoService" CodeBehind="MedioPagoService.svc.cs" %>

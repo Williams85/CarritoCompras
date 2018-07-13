@@ -1,0 +1,7 @@
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Repositorio\bin\Debug\CarritoCompras.Repositorio.dll
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Repositorio\bin\Debug\CarritoCompras.Repositorio.pdb
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Repositorio\bin\Debug\CarritoCompras.Entidad.dll
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Repositorio\bin\Debug\CarritoCompras.Entidad.pdb
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Repositorio\obj\Debug\CarritoCompras.Repositorio.csprojResolveAssemblyReference.cache
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Repositorio\obj\Debug\CarritoCompras.Repositorio.dll
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Repositorio\obj\Debug\CarritoCompras.Repositorio.pdb

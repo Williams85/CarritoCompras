@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MacroConsultaService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:3327/MacroConsultaService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:3327/MacroConsultaService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:3327/MacroConsultaService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CarritoCompras.Entidad" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMacroConsultaService_ObtenerCategorias_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCategorias" />
+  </wsdl:message>
+  <wsdl:message name="IMacroConsultaService_ObtenerCategorias_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCategoriasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMacroConsultaService_ObtenerMediosPago_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerMediosPago" />
+  </wsdl:message>
+  <wsdl:message name="IMacroConsultaService_ObtenerMediosPago_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerMediosPagoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMacroConsultaService_ObtenerProductos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerProductos" />
+  </wsdl:message>
+  <wsdl:message name="IMacroConsultaService_ObtenerProductos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerProductosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMacroConsultaService_ObtenerCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCliente" />
+  </wsdl:message>
+  <wsdl:message name="IMacroConsultaService_ObtenerCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMacroConsultaService_ObtenerPedido_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPedido" />
+  </wsdl:message>
+  <wsdl:message name="IMacroConsultaService_ObtenerPedido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPedidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMacroConsultaService_ObtenerDetallePedido_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDetallePedido" />
+  </wsdl:message>
+  <wsdl:message name="IMacroConsultaService_ObtenerDetallePedido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDetallePedidoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMacroConsultaService">
+    <wsdl:operation name="ObtenerCategorias">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMacroConsultaService/ObtenerCategorias" message="tns:IMacroConsultaService_ObtenerCategorias_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMacroConsultaService/ObtenerCategoriasResponse" message="tns:IMacroConsultaService_ObtenerCategorias_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerMediosPago">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMacroConsultaService/ObtenerMediosPago" message="tns:IMacroConsultaService_ObtenerMediosPago_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMacroConsultaService/ObtenerMediosPagoResponse" message="tns:IMacroConsultaService_ObtenerMediosPago_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerProductos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMacroConsultaService/ObtenerProductos" message="tns:IMacroConsultaService_ObtenerProductos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMacroConsultaService/ObtenerProductosResponse" message="tns:IMacroConsultaService_ObtenerProductos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMacroConsultaService/ObtenerCliente" message="tns:IMacroConsultaService_ObtenerCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMacroConsultaService/ObtenerClienteResponse" message="tns:IMacroConsultaService_ObtenerCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPedido">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMacroConsultaService/ObtenerPedido" message="tns:IMacroConsultaService_ObtenerPedido_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMacroConsultaService/ObtenerPedidoResponse" message="tns:IMacroConsultaService_ObtenerPedido_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDetallePedido">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMacroConsultaService/ObtenerDetallePedido" message="tns:IMacroConsultaService_ObtenerDetallePedido_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMacroConsultaService/ObtenerDetallePedidoResponse" message="tns:IMacroConsultaService_ObtenerDetallePedido_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IMacroConsultaService" type="tns:IMacroConsultaService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ObtenerCategorias">
+      <soap:operation soapAction="http://tempuri.org/IMacroConsultaService/ObtenerCategorias" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerMediosPago">
+      <soap:operation soapAction="http://tempuri.org/IMacroConsultaService/ObtenerMediosPago" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerProductos">
+      <soap:operation soapAction="http://tempuri.org/IMacroConsultaService/ObtenerProductos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCliente">
+      <soap:operation soapAction="http://tempuri.org/IMacroConsultaService/ObtenerCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPedido">
+      <soap:operation soapAction="http://tempuri.org/IMacroConsultaService/ObtenerPedido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDetallePedido">
+      <soap:operation soapAction="http://tempuri.org/IMacroConsultaService/ObtenerDetallePedido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MacroConsultaService">
+    <wsdl:port name="BasicHttpBinding_IMacroConsultaService" binding="tns:BasicHttpBinding_IMacroConsultaService">
+      <soap:address location="http://localhost:3327/MacroConsultaService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

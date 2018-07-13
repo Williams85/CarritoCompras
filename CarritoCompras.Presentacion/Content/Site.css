@@ -1,0 +1,170 @@
+﻿body {
+    background: #F8F8F8;
+    padding: 0;
+    margin: 0;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+
+
+header {
+    padding: 20px;
+}
+
+nav {
+    background: #F01612;
+    float:left;
+    padding: 2%;
+    width: 20%;
+}
+
+    nav ul li {
+        padding: 5px;
+    }
+
+        nav ul li a {
+            color: #fff;
+            font-size: 16px;
+        }
+
+            nav ul li a:hover {
+                color: #fff;
+            }
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.centrar {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.contenido-login{
+    background: #99CC00;
+    width:300px;
+    padding:20px 10px;
+    position:relative;
+    left:50%;
+
+}
+
+.contenido-login h1{
+    display:block;
+    text-align:center;
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+.contenido-login input{
+    border:1px solid #000;
+    font-size:15px;
+    margin-bottom:20px;
+    padding:3px;
+    width:100%;
+}
+
+.contenido {
+    float:left;
+    padding: 10px 20px;
+    width: 70%;
+}
+
+.contenido article {
+    background:#99CC00;
+    border:1px solid #F01612;
+    border-radius:5px;
+    float: left;
+    margin-bottom:20px;
+    margin-left:3%;
+    padding:5px 15px 15px 15px;
+    width: 30%;
+}
+
+.contenido article img{
+    height:200px;
+}
+
+.contenido article input{
+    border:1px solid #000;
+    border-radius:5px;
+    float:right;
+
+    padding:5px;
+    width:60%;
+}
+
+.contenido article span{
+    display:block;
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+}
+
+.contenido article .precio{
+    font-size:20px;
+    text-align:center;
+}
+.contenido article .stock{
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.tabla{
+    width:100%;
+}
+
+.tabla thead{
+    background:#99CC00;
+}
+.tabla td, .tabla th{
+    padding:10px;
+}
+
+.user-login{
+    display:block;
+    float:right;
+    font-size:20px;
+    margin-top:20px;
+}

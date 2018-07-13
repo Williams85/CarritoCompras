@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CarritoCompras.Entidad" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CarritoCompras.Entidad" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfDetallePedidoEntidad">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DetallePedidoEntidad" nillable="true" type="tns:DetallePedidoEntidad" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDetallePedidoEntidad" nillable="true" type="tns:ArrayOfDetallePedidoEntidad" />
+  <xs:complexType name="DetallePedidoEntidad">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cantidad" type="xs:int" />
+      <xs:element minOccurs="0" name="Cod_DetallePedido" type="xs:int" />
+      <xs:element minOccurs="0" name="Cod_Pedido" type="xs:int" />
+      <xs:element minOccurs="0" name="Producto" nillable="true" type="tns:ProductoEntidad" />
+      <xs:element minOccurs="0" name="SubTotal" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DetallePedidoEntidad" nillable="true" type="tns:DetallePedidoEntidad" />
+  <xs:complexType name="ProductoEntidad">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cantidad" type="xs:int" />
+      <xs:element minOccurs="0" name="Categoria" nillable="true" type="tns:CategoriaEntidad" />
+      <xs:element minOccurs="0" name="Cod_Producto" type="xs:int" />
+      <xs:element minOccurs="0" name="Estado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Foto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nom_Producto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Precio" type="xs:double" />
+      <xs:element minOccurs="0" name="UnidadMedida" nillable="true" type="tns:UnidadMedidaEntidad" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProductoEntidad" nillable="true" type="tns:ProductoEntidad" />
+  <xs:complexType name="CategoriaEntidad">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cod_Categoria" type="xs:int" />
+      <xs:element minOccurs="0" name="Estado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Nom_Categoria" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CategoriaEntidad" nillable="true" type="tns:CategoriaEntidad" />
+  <xs:complexType name="UnidadMedidaEntidad">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cod_UnidadMedida" type="xs:int" />
+      <xs:element minOccurs="0" name="Estado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Nom_UnidadMedida" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UnidadMedidaEntidad" nillable="true" type="tns:UnidadMedidaEntidad" />
+</xs:schema>

@@ -1,0 +1,73 @@
+﻿@model List<CarritoCompras.Agente.VS.PedidoEntidad>
+@{
+    ViewBag.Title = "_ResultadoPedidos";
+}
+
+@if (Model != null && Model.Count > 0)
+{
+    <br /><br /><br />
+    <table class="tabla">
+        <thead>
+            <tr>
+                <th>N° Pedido</th>
+                <th class="center">Cliente</th>
+                <th class="center">Fecha Pedido</th>
+                <th>Fecha Entrega</th>
+                <th>Monto</th>
+                <th>Estado</th>
+                <th>Accion</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var entidad in Model)
+            {
+                <tr>
+                    <td class="center">
+                        @entidad.Num_Pedido
+                    </td>
+                    <td class="center">
+                        @entidad.Cliente.Nom_Cliente
+                    </td>
+                    <td class="center">
+                        @entidad.Fecha_Pedido.ToString("dd/MM/yyyy")
+                    </td>
+                    <td class="center">
+                        @entidad.Fecha_Entrega.ToString("dd/MM/yyyy")
+                    </td>
+                    <td class="center">
+                        @entidad.Total_Neto.ToString("###.#0")
+                    </td>
+                    <td class="center">
+                        @entidad.EstadoPedido.Nom_EstadoPedido
+                    </td>
+                    <td>
+                        @if (entidad.EstadoPedido.Cod_EstadoPedido == 1)
+                        {
+                            <button type="button" class="btn btn-info btn-accion" data-id="@entidad.Cod_Pedido">Enviado</button>
+                        }
+                        else if (entidad.EstadoPedido.Cod_EstadoPedido == 2)
+                        {
+                            <button type="button" class="btn btn-info btn-accion" data-id="@entidad.Cod_Pedido">Recibido</button>
+                        }
+                        else if (entidad.EstadoPedido.Cod_EstadoPedido == 3)
+                        {
+                            <button type="button" class="btn btn-info btn-accion" data-id="@entidad.Cod_Pedido" disabled>Recibido</button>
+                        }
+
+
+                    </td>
+                </tr>
+            }
+
+
+        </tbody>
+    </table>
+}
+else
+{
+    <div style="text-align:center;font-size:16px;padding:20px;background:yellow;margin-top:25px;">
+        No hay pedidos
+    </div>
+}
+
+

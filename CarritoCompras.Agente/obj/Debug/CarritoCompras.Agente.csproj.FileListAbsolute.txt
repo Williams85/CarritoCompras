@@ -1,0 +1,5 @@
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Agente\bin\Debug\CarritoCompras.Agente.dll.config
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Agente\bin\Debug\CarritoCompras.Agente.dll
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Agente\bin\Debug\CarritoCompras.Agente.pdb
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Agente\obj\Debug\CarritoCompras.Agente.dll
+D:\Datos\Proyectos\Personal\Carrito Compras\Fuentes\CarritoCompras\CarritoCompras.Agente\obj\Debug\CarritoCompras.Agente.pdb

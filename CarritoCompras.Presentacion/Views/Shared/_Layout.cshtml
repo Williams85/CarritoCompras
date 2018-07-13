@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</head>
+<body>
+
+
+    <header class="centrar">
+        <img src="@Url.Content("~/images/logo.png")" width="200" />
+
+
+        @if (SessionManager.Usuario != null && SessionManager.Usuario.Nom_Usuario.Trim() != "")
+        {
+            <span class="user-login">@SessionManager.Usuario.Perfil_Usuario <a href="/Admin/Index" style="margin-left:15px;">Salir</a></span>
+            <div class="clearfix"></div>
+        }
+        else
+        {
+            <a href="/Admin/Index/" class="btn btn-primary active" style="float:right;" role="button">Intranet</a>
+        }
+    </header>
+    <section class="centrar">
+        @if (SessionManager.ListaCategorias != null && SessionManager.ListaCategorias.Count > 0)
+        {
+            <nav class="left">
+                <ul>
+                    @foreach (var entidad in SessionManager.ListaCategorias)
+                    {
+                        <li>
+                            <a href="@Url.Action("Categoria", "Home", new { id = entidad.Cod_Categoria })">@entidad.Nom_Categoria</a>
+                        </li>
+                    }
+                </ul>
+
+            </nav>
+        }
+        else if (SessionManager.Usuario != null && SessionManager.Usuario.Nom_Usuario.Trim() != "")
+        {
+            <nav class="left">
+                <ul>
+                    <li>
+                        <a href="/Admin/ConsultarPedido">Consultar Pedidos</a>
+                    </li>
+                </ul>
+
+            </nav>
+        }
+        @*else
+            {
+                  <nav class="left">
+                    <ul>
+                            <li>
+                                <a href="/Admin/ConsultarPedidos">Consultar Pedidos</a>
+                            </li>
+                    </ul>
+
+                </nav>
+            }*@
+
+        <div class="contenido left">
+            @RenderBody()
+        </div>
+
+    </section>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

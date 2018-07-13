@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="041bc287-fb71-48a5-b8dc-bf6ac68dd946" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:3327/MacroConsultaService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MacroConsultaService.disco" MetadataType="Disco" ID="75ee8e5f-3a3d-4ff5-89fc-9e8a9bbfffb7" SourceId="1" SourceUrl="http://localhost:3327/MacroConsultaService.svc?disco" />
+    <MetadataFile FileName="MacroConsultaService.wsdl" MetadataType="Wsdl" ID="6f2f5ae8-0a6f-4ce9-b594-a8e0d86e465e" SourceId="1" SourceUrl="http://localhost:3327/MacroConsultaService.svc?wsdl" />
+    <MetadataFile FileName="MacroConsultaService.xsd" MetadataType="Schema" ID="1d59585f-cd4f-4e17-bd15-5a12deafdd11" SourceId="1" SourceUrl="http://localhost:3327/MacroConsultaService.svc?xsd=xsd0" />
+    <MetadataFile FileName="MacroConsultaService1.xsd" MetadataType="Schema" ID="56755bf1-deaa-45ed-87f2-160517da5987" SourceId="1" SourceUrl="http://localhost:3327/MacroConsultaService.svc?xsd=xsd1" />
+    <MetadataFile FileName="MacroConsultaService2.xsd" MetadataType="Schema" ID="fe2eba7d-46af-4ad3-99b1-94f861f812b7" SourceId="1" SourceUrl="http://localhost:3327/MacroConsultaService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

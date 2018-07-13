@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="contenido-login">
+    <h1>Iniciar Sesion</h1>
+    <input type="text" id="Nom_Usuario" placeholder="Usuario" />
+    <input type="password" id="Pass_Usuario" placeholder="Password" />
+    <button type="button" class="btn btn-info" id="btn-aceptar">Ingresar</button>
+    <a href="/Home/Index" style="float:right;">Regresar a Portal</a>
+    <div class="clearfix"></div>
+</div>
+
+@Scripts.Render("~/bundles/script-layaout")
+@Scripts.Render("~/bundles/admin")

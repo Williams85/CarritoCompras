@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e4d5e663-e555-46c3-8cf6-692e2b1f7cef" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51149/VentaService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="VentaService.xsd" MetadataType="Schema" ID="9a08b750-3bc4-4096-9dbd-8a9bf36cfa1c" SourceId="1" SourceUrl="http://localhost:51149/VentaService.svc?xsd=xsd3" />
+    <MetadataFile FileName="VentaService.disco" MetadataType="Disco" ID="a938ec7f-6d52-4715-b979-c28248ce9615" SourceId="1" SourceUrl="http://localhost:51149/VentaService.svc?disco" />
+    <MetadataFile FileName="VentaService1.xsd" MetadataType="Schema" ID="e519b668-4eea-4520-b492-6572d9134038" SourceId="1" SourceUrl="http://localhost:51149/VentaService.svc?xsd=xsd0" />
+    <MetadataFile FileName="VentaService2.xsd" MetadataType="Schema" ID="1cce6987-c60d-4d18-92f8-44bb0dd1e20c" SourceId="1" SourceUrl="http://localhost:51149/VentaService.svc?xsd=xsd2" />
+    <MetadataFile FileName="VentaService3.xsd" MetadataType="Schema" ID="df899498-2f31-478a-bcb8-39438eaaef58" SourceId="1" SourceUrl="http://localhost:51149/VentaService.svc?xsd=xsd1" />
+    <MetadataFile FileName="VentaService.wsdl" MetadataType="Wsdl" ID="3337ce26-0645-4480-a97e-252f72406ad9" SourceId="1" SourceUrl="http://localhost:51149/VentaService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
